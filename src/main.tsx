@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import TradingTools from './Components/TradingTools.tsx'
 import './index.css'
 
 import {
@@ -13,8 +12,8 @@ import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
 import Layout from './layout/Layout.tsx';
 import Error from './layout/Error.tsx';
-import Learn from './Components/Learn.tsx';
-import Indicators from './Components/Indicators.tsx';
+import Home from './Components/Home.tsx';
+
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_API_KEY,
@@ -36,16 +35,9 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <TradingTools />,
+        element: <Home />,
       },
-      {
-        path: "learn",
-        element: <Learn />,
-      },
-      {
-        path: "indicators",
-        element: <Indicators />,
-      },
+
     ],
   },
 ]);

@@ -4,51 +4,34 @@ import { Outlet, NavLink } from "react-router-dom";
 import './Layout.css'
 import { classNames } from '../utils';
 import Footer from './Footer';
-// const user = {
-//   name: 'Tom Cook',
-//   email: 'tom@example.com',
-//   imageUrl:
-//     'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-// }
 
 const navigation = [
-  { name: 'Trading Tools', href: '' },
-  { name: 'Learn', href: 'learn' },
-  { name: 'Indicators', href: 'indicators' },
+  { name: 'Main Deck', href: '' },
+  { name: 'Galleon DAO', href: 'galleondao' },
+  { name: 'Micro Apps', href: 'microapps' },
 ]
 
-const externalLinks = [
-  { name: 'Aevo', href: 'https://app.aevo.xyz/r/davyjones', color: ' text-theme-text-pan-navy bg-theme-oldlace  hover:text-theme-pan-sky  rounded-lg' },
-  { name: 'dYdX', href: 'https://dydx.trade', color: ' text-theme-text-pan-navy bg-theme-oldlace  hover:text-theme-pan-sky  rounded-lg  ' },
-  
-]
-
-// const userNavigation = [
-//   { name: 'Your Profile', href: '#' },
-//   { name: 'Settings', href: '#' },
-//   { name: 'Sign out', href: '#' },
-// ]
 
 export default function Layout() {
   return (
     <>
-      <div className="min-h-full bg-[url('./assets/Frame.png')] bg-contain bg-repeat bg-top">
-        <Disclosure as="nav" className="bg-theme-champagne shadow-sm shadow-theme-navy">
+      <div className="min-h-full bg-[url('./assets/Frame.png')] font-morion font-bold bg-contain bg-repeat bg-top">
+        <Disclosure as="nav" className="bg-theme-oldlace shadow-[3px_3px_0px_#040728]">
           {({ open }) => (
             <>
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 justify-between">
                   <div className="flex">
-                    <a href='https://twitter.com/davyjonesxbt' target='_blank' className="flex flex-shrink-0 items-center">
+                    <a href='https://twitter.com/galleonlabs' target='_blank' className="flex flex-shrink-0 items-center">
                       <img
-                        className="block rounded-lg border h-8 border-theme-pan-navy w-auto lg:hidden"
-                        src="/davyjones.png"
-                        alt="davyjonesxbt"
+                        className="block rounded-md border h-8 border-theme-pan-navy w-auto lg:hidden"
+                        src="/galleon-logo.png"
+                        alt="galleon-logo"
                       />
                       <img
-                        className="hidden rounded-lg border border-theme-pan-navy h-8 w-auto lg:block"
-                        src="/davyjones.png"
-                        alt="davyjonesxbt"
+                        className="hidden rounded-md border border-theme-pan-navy h-8 w-auto lg:block"
+                        src="/galleon-logo.png"
+                        alt="galleon-logo"
                       />
                     </a>
                     <div className="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-6">
@@ -56,8 +39,8 @@ export default function Layout() {
 
                         <NavLink key={item.name} to={item.href} className={classNames(
 
-                          'border-transparent text-theme-pan-navy hover:text-theme-pan-sky hover:border-theme-pan-sky ',
-                          'inline-flex items-center border-b px-1 pt-1 text-md '
+                          'border-transparent text-theme-pan-navy tracking-wide hover:text-theme-pan-sky hover:border-theme-pan-sky ',
+                          'inline-flex items-center border-b px-1 pt-1 text-lg '
                         )}
                         >                          {item.name}</NavLink>
 
@@ -67,27 +50,7 @@ export default function Layout() {
 
 
                     </div>
-                    <div className="hidden sm:-my-px sm:ml-6 sm:pr-8 sm:flex sm:space-x-4 border-l border-r px-4 border-theme-pan-navy ">
 
-                      <span className='inline-flex items-center  text-md  my-3 pl-4'>Trade:</span>
-
-
-                      {externalLinks.map((item) => (
-                        <a
-                          target='_blank'
-                          key={item.name}
-                          href={item.href}
-                          className={classNames(
-                            item.color,
-                            'inline-flex items-center shadow-sm shadow-theme-pan-navy   text-md  my-3 px-4'
-                          )}
-
-                        >
-                          {item.name}
-                        </a>
-                      ))}
-
-                    </div>
                   </div>
                   <div className="hidden sm:ml-6 sm:flex sm:items-center">
                     {/* <button
@@ -165,8 +128,8 @@ export default function Layout() {
                       href={item.href}
                       className={classNames(
 
-                        'border-transparent text-theme-pan-navy hover:border-theme-pan-navy  ',
-                        'block border-l-4 py-2 pl-3 pr-4 text-base font-medium'
+                        'border-transparent text-theme-pan-navy font-morion hover:border-theme-pan-navy  ',
+                        'block border-l-4 py-2 pl-3 pr-4 text-lg font-medium'
                       )}
 
                     >
@@ -174,22 +137,7 @@ export default function Layout() {
                     </Disclosure.Button>
                   ))}
 
-                  {externalLinks.map((item) => (
 
-                    <Disclosure.Button
-                      key={item.name}
-                      as="a"
-                      href={item.href}
-                      className={classNames(
-
-                        'border-transparent text-theme-pan-navy hover:border-theme-pan-navy  ',
-                        'block border-l-4 py-2 pl-3 pr-4 text-base font-medium'
-                      )}
-
-                    >
-                      {item.name}
-                    </Disclosure.Button>
-                  ))}
                 </div>
                 {/* <div className="border-t border-gray-200 pb-3 pt-4">
                   <div className="flex items-center px-4">
@@ -229,14 +177,9 @@ export default function Layout() {
 
         <div className="py-10 ">
           <main>
-            <div className=' mx-auto max-w-7xl sm:px-6 lg:px-8 leading-tight  tracking-normal font-morion bg-theme-champagne bg-opacity-50'>
-              <h1 className=" text-xl font-semibold  text-theme-pan-navy pl-4 hover:text-theme-pan-sky ">  <a href='https://twitter.com/davyjonesxbt' target='_blank'>DavyJonesXBT</a>
-              </h1>
-              <p className=' text-md  leading-tight font-wigrum pl-4'>Trading Tools & Resources</p>
-            </div>
             <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 "><Outlet></Outlet></div>
           </main>
-          <Footer></Footer>
+          {/* <Footer></Footer> */}
         </div>
       </div>
     </>
