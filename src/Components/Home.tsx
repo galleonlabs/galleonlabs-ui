@@ -48,11 +48,11 @@ export default function Home() {
                       </div>
                       <div className="group">
                         <p className="mt-1 text-md text-theme-navy pl-6 group group-hover:text-theme-pan-sky">Galleon DAO</p>
-                        <p className="mt-1 text-md text-theme-navy pl-6 group group-hover:text-theme-pan-sky">Ex-core development team</p>
+                        <p className="mt-1 text-md text-theme-navy pl-6 group group-hover:text-theme-pan-sky">Decentralised asset management</p>
                       </div>
                     </a>
                   </span>
-                  <p className="mt-6 text-md text-theme-navy  group group-hover:text-theme-pan-sky pb-4">We served as the primary core development team to the VC-funded decentralised organisation, Galleon, with the mission to become the leading on-chain structured products provider. The DAO has since ran out of runway was discontinued after 1.5 years of development and multiple innovative product launches on Ethereum.</p>
+                  <p className="mt-6 text-md text-theme-navy  group group-hover:text-theme-pan-sky pb-4">We served as the founding core development team to the VC-funded decentralised organisation, Galleon, with the mission to become the leading on-chain structured products provider. The DAO has since ran out of runway was discontinued after 1.5 years of development and multiple innovative product launches on Ethereum.</p>
 
                   <LinkBadge title={'Github'} url={'https://github.com/GalleonDAO'}></LinkBadge>
                 </div>
