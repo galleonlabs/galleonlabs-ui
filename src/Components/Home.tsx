@@ -57,11 +57,11 @@ export default function Home() {
               <div className="mb-4 border-b pb-8 border-theme-navy">
 
                 <img
-                  className="inline-flex h-16 translate-y-2.5 w-auto justify-start rounded-md border border-theme-oldlace navy  shadow-[3px_3px_0px_#040728]  sm:h-16"
+                  className="block mb-3 sm:mb-0 sm:inline-flex h-16 sm:translate-y-2.5 w-auto justify-start rounded-md border border-theme-oldlace navy  shadow-[3px_3px_0px_#040728]  sm:h-16"
                   src={'./galleon.png'}
                   alt=""
                 />
-                <div className="inline-flex ml-8 text-theme-navy text-left">
+                <div className="inline-flex sm:ml-8 text-theme-navy text-left">
                   <div className="    font-morion font-bold tracking-wide  ">
                     <span className="text-lg">Galleon Labs</span>
                     <p className="  text-md  font-wigrum font-normal   ">
