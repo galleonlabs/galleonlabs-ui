@@ -13,6 +13,7 @@ import { getFirestore } from "firebase/firestore";
 import Layout from './layout/Layout.tsx';
 import Error from './layout/Error.tsx';
 import Home from './Components/Home.tsx';
+import DAO from './Components/DAO.tsx';
 
 
 const firebaseConfig = {
@@ -37,7 +38,10 @@ const router = createBrowserRouter([
         path: "",
         element: <Home />,
       },
-
+      {
+        path: "dao",
+        element: <DAO />,
+      },
     ],
   },
 ]);

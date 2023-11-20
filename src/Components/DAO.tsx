@@ -1,9 +1,9 @@
-import { projects, team } from "../constants";
+import { dao } from "../constants";
 import LinkBadge from "./LinkBadge";
 
 
 
-export default function Home() {
+export default function DAO() {
 
   function Project({ project }: { project: any }) {
     return (
@@ -19,7 +19,7 @@ export default function Home() {
             </div>
           </a>
         </span>
-        <p className="mt-6 text-md text-theme-navy group group-hover:text-theme-pan-sky pb-4">{project.detail}</p>
+        <p className="mt-6 text-md text-theme-navy group group-hover:text-theme-pan-sky "></p>
         {project.badges.map((badge: any) => (
           <LinkBadge key={badge.title} title={badge.title} url={badge.url} />
         ))}
@@ -27,23 +27,6 @@ export default function Home() {
     );
   }
 
-  function TeamMember({ member }: { member: any }) {
-    return (
-      <div>
-        <span className="inline-flex items-center justify-center">
-          <a className="flex" href={member.url} target="_blank" rel="noopener noreferrer">
-            <div className="mx-auto w-auto justify-center text-center ">
-              <img className={' mx-auto translate-y-0.5 inline-flex h-16 w-16 justify-center rounded-md border border-theme-navy shadow-[3px_3px_0px_#040728] hover:grayscale sm:h-16 ' + member.imagePadding} src={member.imageSrc} alt={member.imageAlt} />
-            </div>
-            <div className="group">
-              <p className="mt-1 text-md text-theme-navy pl-6 group group-hover:text-theme-pan-sky">{member.name}</p>
-              <p className="mt-1 text-md text-theme-navy pl-6 group group-hover:text-theme-pan-sky">{member.handle}</p>
-            </div>
-          </a>
-        </span>
-      </div>
-    );
-  }
 
   return (
     <>
@@ -58,14 +41,14 @@ export default function Home() {
 
                 <img
                   className="inline-flex h-16 translate-y-2.5 w-auto justify-start rounded-md border border-theme-oldlace navy  shadow-[3px_3px_0px_#040728]  sm:h-16"
-                  src={'./galleon.png'}
+                  src={'./galleon-logo.png'}
                   alt=""
                 />
                 <div className="inline-flex ml-8 text-theme-navy text-left">
                   <div className="    font-morion font-bold tracking-wide  ">
-                    <span className="text-lg">Galleon Labs</span>
+                    <span className="text-lg">Galleon DAO</span>
                     <p className="  text-md  font-wigrum font-normal   ">
-                      A crypto-native development studio.
+                      The discontinued decentralised asset manager, governed by Doubloon.
                     </p>
                   </div>
 
@@ -75,17 +58,13 @@ export default function Home() {
 
 
               {/* Projects Section */}
-              <h1 className="text-left text-lg font-bold text-theme-navy pb-4">Projects</h1>
+              <h1 className="text-left text-lg font-bold text-theme-navy pb-4">Resource Archive</h1>
           
-                {projects.map((project: any) => (
+                {dao.map((project: any) => (
                   <Project key={project.title} project={project} />
                 ))}
              
-              {/* Team Section */}
-              <h1 className="text-left text-lg font-bold text-theme-navy pb-4">Team</h1>
-              {team.map((member: any) => (
-                <TeamMember key={member.name} member={member} />
-              ))}
+  
 
             </div>
           </div>
