@@ -1,11 +1,35 @@
 import { projects, team } from "../constants";
 import LinkBadge from "./LinkBadge";
 
+export interface Badge {
+  title: string;
+  url: string;
+}
+
+export interface ProjectProps {
+  title: string;
+  url: string;
+  imageSrc: string;
+  imageAlt: string;
+  description: string;
+  detail: string;
+  badges: Badge[];
+  imagePadding?: string;
+}
+
+export interface TeamMemberProps {
+  name: string;
+  url: string;
+  imageSrc: string;
+  imageAlt: string;
+  handle?: string;
+  imagePadding?: string;
+}
 
 
 export default function Home() {
 
-  function Project({ project }: { project: any }) {
+  function Project({ project }: { project: ProjectProps }) {
     return (
       <div className="pb-6 mb-6 border-b border-theme-navy/20">
         <span className="inline-flex items-center justify-center">
@@ -20,16 +44,16 @@ export default function Home() {
           </a>
         </span>
         <p className="mt-6 text-md text-theme-navy group group-hover:text-theme-pan-sky pb-4">{project.detail}</p>
-        {project.badges.map((badge: any) => (
+        {project.badges.map((badge: Badge) => (
           <LinkBadge key={badge.title} title={badge.title} url={badge.url} />
         ))}
       </div>
     );
   }
 
-  function TeamMember({ member }: { member: any }) {
+  function TeamMember({ member }: { member: TeamMemberProps }) {
     return (
-      <div>
+      <div className="pb-4">
         <span className="inline-flex items-center justify-center">
           <a className="flex" href={member.url} target="_blank" rel="noopener noreferrer">
             <div className="mx-auto w-auto justify-center text-center ">
@@ -76,11 +100,11 @@ export default function Home() {
 
               {/* Projects Section */}
               <h1 className="text-left text-lg font-bold text-theme-navy pb-4">Projects</h1>
-          
-                {projects.map((project: any) => (
-                  <Project key={project.title} project={project} />
-                ))}
-             
+
+              {projects.map((project: any) => (
+                <Project key={project.title} project={project} />
+              ))}
+
               {/* Team Section */}
               <h1 className="text-left text-lg font-bold text-theme-navy pb-4">Team</h1>
               {team.map((member: any) => (

@@ -69,8 +69,8 @@ const projects = [
       { title: 'Github', url: 'https://github.com/GalleonDAO' },
       { title: 'Twitter', url: 'https://twitter.com/galleonlabs' },
       { title: 'Blog', url: 'https://medium.com/galleondao' },
-      { title: 'Doubloon (DBL)', url: 'https://arbiscan.io/token/0xd3f1da62cafb7e7bc6531ff1cef6f414291f03d3' },
       { title: 'Cursed Pirates', url: 'https://twitter.com/cursedpirates' },
+      { title: 'Archive', url: '/dao' },
     ]
   },
   {
