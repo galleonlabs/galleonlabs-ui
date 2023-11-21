@@ -26,7 +26,6 @@ export interface TeamMemberProps {
   imagePadding?: string;
 }
 
-
 export default function Home() {
 
   function Project({ project }: { project: ProjectProps }) {
@@ -73,13 +72,9 @@ export default function Home() {
     <>
       <div className="pb-12 sm:pb-4">
         <div className="relative isolate lg:px-8">
-
           <div className="mx-auto max-w-3xl py-8 sm:py-16">
-
             <div className="rounded-md font-wigrum font-normal border bg-theme-oldlace border-theme-navy p-4 shadow-[3px_3px_0px_#040728] sm:p-8">
-
               <div className="mb-4 border-b pb-8 border-theme-navy">
-
                 <img
                   className="block mb-3 sm:mb-0 sm:inline-flex h-16 sm:translate-y-2.5 w-auto justify-start rounded-md border border-theme-oldlace navy  shadow-[3px_3px_0px_#040728]  sm:h-16"
                   src={'./galleon.png'}
@@ -92,25 +87,18 @@ export default function Home() {
                       A crypto-native development studio.
                     </p>
                   </div>
-
-
                 </div>
               </div>
 
-
-              {/* Projects Section */}
               <h1 className="text-left text-lg font-bold text-theme-navy pb-4">Projects</h1>
-
               {projects.map((project: any) => (
                 <Project key={project.title} project={project} />
               ))}
 
-              {/* Team Section */}
               <h1 className="text-left text-lg font-bold text-theme-navy pb-4">Team</h1>
               {team.map((member: any) => (
                 <TeamMember key={member.name} member={member} />
               ))}
-
             </div>
           </div>
         </div>

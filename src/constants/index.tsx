@@ -56,7 +56,6 @@ const tracks = [
   },
 ]
 
-// Example Data Array for Projects
 const projects = [
   {
     title: "Galleon DAO",
@@ -135,7 +134,6 @@ const team = [
     imageAlt: "Profile picture of Andrew",
     handle: "@andrew_eth"
   },
-  // Add more team members as needed
 ];
 
 const dao = [
@@ -223,7 +221,6 @@ const dao = [
       { title: 'Soundtrack', url: 'https://opensea.io/collection/cursed-pirates-ost' },
     ]
   },
-  // Add more projects if needed
 ];
 
 export { tracks, projects, team, dao }
