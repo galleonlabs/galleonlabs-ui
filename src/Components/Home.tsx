@@ -81,11 +81,19 @@ export default function Home() {
                   alt=""
                 />
                 <div className="inline-flex sm:ml-8 text-theme-navy text-left">
-                  <div className="    font-morion font-bold tracking-wide  ">
+                  <div className="    font-morion font-bold tracking-wide">
                     <span className="text-lg">Galleon Labs</span>
-                    <p className="  text-md  font-wigrum font-normal   ">
-                      A crypto-native development studio.
+                    <p className="  text-md  font-wigrum font-normal">
+                      A crypto-native development studio. 
+                      <a href="https://github.com/galleonlabs" target="_blank" className="">
+                        <img
+                          className="inline-flex ml-4 h-8 -translate-y-1 hover:bg-theme-champagne rounded-full"
+                          src={'./github-mark.png'}
+                          alt=""
+                        />
+                      </a>
                     </p>
+                   
                   </div>
                 </div>
               </div>
