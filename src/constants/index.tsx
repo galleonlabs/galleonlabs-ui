@@ -73,6 +73,17 @@ const projects = [
     ]
   },
   {
+    title: "Blockcrop Farm",
+    url: "https://blockcropfarm.com/",
+    imageSrc: "/farm.png",
+    imageAlt: "Blockcrop Farm Logo",
+    description: "Crypto yield farming community",
+    detail: "Blockcrop Farm is a place for relaxed, organic, high-yield farming within the crypto space. Enjoy seasonal crops harvests all year round.",
+    badges: [
+      { title: 'Website', url: 'https://blockcropfarm.com/' },
+    ]
+  },
+  {
     title: "Ultra Sound Apps",
     url: "https://ultrasoundapps.com/",
     imageSrc: "/usa.png",
