@@ -75,7 +75,8 @@ const projects = [
   {
     title: "Wojak Jones Farm",
     url: "https://wojakjonesfarm.com",
-    imageSrc: "/farm.png",
+    imageSrc: "/farmer.png",
+    imagePadding: 'p-1',
     imageAlt: "Wojak Jones Farm Logo",
     description: "Crypto yield farming community",
     detail: "Wojak Jones Farm is a place for relaxed, organic, high-yield farming within the crypto space. Enjoy seasonal crops harvests all year round.",
@@ -93,6 +94,18 @@ const projects = [
     detail: "A simple page for navigating crypto trading, investing, portfolio management & analytics apps with one-click.",
     badges: [
       { title: 'Website', url: 'https://ultrasoundapps.com/' },
+    ]
+  },
+  {
+    title: "Saylor Memes",
+    url: "https://saylormemes.com/",
+    imageSrc: 'https://saylormemes.com/saylor.jpg',
+    imageAlt: "Saylor Memes Logo",
+    description: "High quality meme directory",
+    detail: "A hosted directory of the highest quality, hand-picked, organic saylor content and memes for the culture. The directory is open to submissions for review via Twitter.",
+    badges: [
+      { title: 'Website', url: 'https://saylormemes.com/' },
+      { title: 'Twitter', url: 'https://twitter.com/andrew_eth' },
     ]
   },
   {
@@ -121,19 +134,6 @@ const projects = [
       { title: 'ADW - Volatility Map', url: 'https://www.tradingview.com/script/tREldEYH-ADW-Volatility-Map/' },
     ]
   },
-  {
-    title: "Saylor Memes",
-    url: "https://saylormemes.com/",
-    imageSrc: 'https://saylormemes.com/saylor.jpg',
-    imageAlt: "Saylor Memes Logo",
-    description: "High quality meme directory",
-    detail: "A hosted directory of the highest quality, hand-picked, organic saylor content and memes for the culture. The directory is open to submissions for review via Twitter.",
-    badges: [
-      { title: 'Website', url: 'https://saylormemes.com/' },
-      { title: 'Twitter', url: 'https://twitter.com/andrew_eth' },
-    ]
-  },
-  // Add more projects if needed
 ];
 
 const team = [
