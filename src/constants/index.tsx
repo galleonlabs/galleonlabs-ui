@@ -82,6 +82,7 @@ const projects = [
     detail: "Wojak Jones Farm is a place for relaxed, organic, high-yield farming within the crypto space. Enjoy seasonal crops harvests all year round.",
     badges: [
       { title: 'Website', url: 'https://wojakjonesfarm.com/' },
+      { title: 'Github', url: 'https://github.com/galleonlabs/wojak-jones-farm' },
     ]
   },
   {
@@ -94,6 +95,7 @@ const projects = [
     detail: "A simple page for navigating crypto trading, investing, portfolio management & analytics apps with one-click.",
     badges: [
       { title: 'Website', url: 'https://ultrasoundapps.com/' },
+      { title: 'Github', url: 'https://github.com/galleonlabs/ultrasoundapps' },
     ]
   },
   {
@@ -106,6 +108,7 @@ const projects = [
     badges: [
       { title: 'Website', url: 'https://saylormemes.com/' },
       { title: 'Twitter', url: 'https://twitter.com/andrew_eth' },
+      { title: 'Github', url: 'https://github.com/galleonlabs/saylormemes' },
     ]
   },
   {
