@@ -73,14 +73,14 @@ const projects = [
     ]
   },
   {
-    title: "Blockcrop Farm",
-    url: "https://blockcropfarm.com/",
+    title: "Wojak Jones Farm",
+    url: "https://wojakjonesfarm.com",
     imageSrc: "/farm.png",
-    imageAlt: "Blockcrop Farm Logo",
+    imageAlt: "Wojak Jones Farm Logo",
     description: "Crypto yield farming community",
-    detail: "Blockcrop Farm is a place for relaxed, organic, high-yield farming within the crypto space. Enjoy seasonal crops harvests all year round.",
+    detail: "Wojak Jones Farm is a place for relaxed, organic, high-yield farming within the crypto space. Enjoy seasonal crops harvests all year round.",
     badges: [
-      { title: 'Website', url: 'https://blockcropfarm.com/' },
+      { title: 'Website', url: 'https://wojakjonesfarm.com/' },
     ]
   },
   {
