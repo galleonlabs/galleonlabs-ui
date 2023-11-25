@@ -86,19 +86,6 @@ const projects = [
     ]
   },
   {
-    title: "Bitcorn Commodity Index",
-    url: "https://bitcornindex.com",
-    imageSrc: "/corn-black.png",
-    imagePadding: 'p-1',
-    imageAlt: "A tradable meme token, $BITCORN, created for the vibes.",
-    description: "Meme token, for fun.",
-    detail: "A valueless next-generation commodity meme token.",
-    badges: [
-      { title: 'Website', url: 'https://bitcornindex.com' },
-      { title: 'Github', url: 'https://github.com/galleonlabs/bitcorn-commodity-index' },
-    ]
-  },
-  {
     title: "Ultra Sound Apps",
     url: "https://ultrasoundapps.com/",
     imageSrc: "/usa.png",
