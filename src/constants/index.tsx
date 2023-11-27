@@ -86,6 +86,18 @@ const projects = [
     ]
   },
   {
+    title: "Glory to Rome Token",
+    url: "https://glorytorome.xyz",
+    imageSrc: "/rome-i.png",
+    imageAlt: "Glory to Rome Logo",
+    description: "Meme token.",
+    detail: "Token community celebrating the greatest historical empire. Deployed for fun. For Rome.",
+    badges: [
+      { title: 'Website', url: 'https://glorytorome.xyz' },
+      { title: 'Github', url: 'https://github.com/galleonlabs/glory-to-rome-token' },
+    ]
+  },
+  {
     title: "Ultra Sound Apps",
     url: "https://ultrasoundapps.com/",
     imageSrc: "/usa.png",
