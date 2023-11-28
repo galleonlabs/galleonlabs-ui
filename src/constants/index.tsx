@@ -62,8 +62,8 @@ const projects = [
     url: "https://github.com/GalleonDAO",
     imageSrc: "./galleon-logo.png",
     imageAlt: "Galleon DAO Logo",
-    description: "Decentralised asset management",
-    detail: "Served as the founding core development team to the VC-funded decentralised organisation, Galleon, with the mission to become the leading on-chain structured products provider. The DAO has since ran out of runway was discontinued after 1.5 years of development and multiple innovative product launches on Ethereum.",
+    description: "Decentralized asset management and innovation hub.",
+    detail: "Functioned as the pioneering core development team for the venture-backed decentralized organization, Galleon. Aimed to be the premier provider of on-chain structured products. The DAO was operational for 1.5 years, leading several pioneering product launches on Ethereum, before it was discontinued due to funding constraints.",
     badges: [
       { title: 'Github', url: 'https://github.com/GalleonDAO' },
       { title: 'Twitter', url: 'https://twitter.com/galleonlabs' },
@@ -78,8 +78,8 @@ const projects = [
     imageSrc: "/farmer.png",
     imagePadding: 'p-1',
     imageAlt: "Wojak Jones Farm Logo",
-    description: "Crypto yield farming community",
-    detail: "Wojak Jones Farm is a place for relaxed, organic, high-yield farming within the crypto space. Enjoy seasonal crops harvests all year round.",
+    description: "Community for crypto enthusiasts focused on yield farming.",
+    detail: "Wojak Jones Farm offers a serene and productive environment for high-yield cryptocurrency farming. It's a community-centric platform where members can engage in seasonal crypto farming activities throughout the year.",
     badges: [
       { title: 'Website', url: 'https://wojakjonesfarm.com/' },
       { title: 'Github', url: 'https://github.com/galleonlabs/wojak-jones-farm' },
@@ -88,10 +88,10 @@ const projects = [
   {
     title: "Glory to Rome Token",
     url: "https://glorytorome.xyz",
-    imageSrc: "/rome-i.png",
+    imageSrc: "/rome-icon-colour.png",
     imageAlt: "Glory to Rome Logo",
-    description: "Meme token.",
-    detail: "Token community celebrating the greatest historical empire. Deployed for fun. For Rome.",
+    description: "A fun, community-driven meme token.",
+    detail: "A token dedicated to celebrating the grandeur of ancient Rome. Designed as a playful endeavor, this meme token aims to unite enthusiasts and admirers of Rome's historical legacy.",
     badges: [
       { title: 'Website', url: 'https://glorytorome.xyz' },
       { title: 'Github', url: 'https://github.com/galleonlabs/glory-to-rome-token' },
@@ -103,8 +103,8 @@ const projects = [
     imageSrc: "/usa.png",
     imagePadding: 'p-1.5',
     imageAlt: "Ultra Sound Apps Logo",
-    description: "Crypto browser homepage",
-    detail: "A simple page for navigating crypto trading, investing, portfolio management & analytics apps with one-click.",
+    description: "Your gateway to crypto trading and analytics.",
+    detail: "Ultra Sound Apps provides a streamlined, easy-to-use homepage for navigating various applications in crypto trading, investing, portfolio management, and analytics, enabling one-click access to essential tools.",
     badges: [
       { title: 'Website', url: 'https://ultrasoundapps.com/' },
       { title: 'Github', url: 'https://github.com/galleonlabs/ultrasoundapps' },
@@ -115,8 +115,8 @@ const projects = [
     url: "https://saylormemes.com/",
     imageSrc: 'https://saylormemes.com/saylor.jpg',
     imageAlt: "Saylor Memes Logo",
-    description: "High quality meme directory",
-    detail: "A hosted directory of the highest quality, hand-picked, organic saylor content and memes for the culture. The directory is open to submissions for review via Twitter.",
+    description: "Curated collection of high-quality memes.",
+    detail: "Saylor Memes is a carefully curated online directory showcasing top-notch, organically sourced memes dedicated to the crypto culture. The platform encourages community contributions and curates content through social media interactions.",
     badges: [
       { title: 'Website', url: 'https://saylormemes.com/' },
       { title: 'Twitter', url: 'https://twitter.com/andrew_eth' },
@@ -129,8 +129,8 @@ const projects = [
     imageSrc: "/rf.png",
     imagePadding: 'p-1',
     imageAlt: "Music NFTs Logo",
-    description: "Instrumental soundtracks",
-    detail: "Creative studio embedded within the Web3 ecosystem to create ambient & thematic music to games, films, documentaries and art, immortalised as collectable NFTs on-chain.",
+    description: "Evocative soundtracks as NFTs.",
+    detail: "A creative studio in the Web3 space specializing in producing ambient and thematic music for games, films, and documentaries. These unique soundtracks are immortalized as collectible NFTs, capturing the essence of various art forms.",
     badges: [
       { title: 'Opensea', url: 'https://opensea.io/GalleonLabs' },
       { title: 'Cursed Pirates OST', url: 'https://opensea.io/collection/cursed-pirates-ost' },
@@ -141,8 +141,8 @@ const projects = [
     url: "https://www.tradingview.com/u/Tradespot/#published-scripts",
     imageSrc: 'https://pbs.twimg.com/profile_images/1598328471729704963/D7slFVZN_400x400.jpg',
     imageAlt: "TradingView Logo",
-    description: "Free charting scripts",
-    detail: "A free suite of TradingView chart indicator scripts that help visualise certain aspects of an traded asset, such as current trend and volatility.",
+    description: "Advanced charting tools for traders.",
+    detail: "Offering a comprehensive suite of free TradingView indicator scripts, this project enhances traders' visual analysis of market trends, volatility, and momentum, aiding in more informed trading decisions.",
     badges: [
       { title: 'ADW - Colour Trend', url: 'https://www.tradingview.com/script/AFZ7CFdm-ADW-Colour-Trend/' },
       { title: 'ADW - Momentum', url: 'https://www.tradingview.com/script/p8CsPGUb-ADW-Momentum/' },
@@ -150,6 +150,7 @@ const projects = [
     ]
   },
 ];
+
 
 const team = [
   {
