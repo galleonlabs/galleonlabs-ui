@@ -86,18 +86,6 @@ const projects = [
     ]
   },
   {
-    title: "Glory to Rome Token",
-    url: "https://glorytorome.xyz",
-    imageSrc: "/rome-icon-colour.png",
-    imageAlt: "Glory to Rome Logo",
-    description: "A fun, community-driven meme token.",
-    detail: "A token dedicated to celebrating the grandeur of ancient Rome. Designed as a playful endeavor, this meme token aims to unite enthusiasts and admirers of Rome's historical legacy.",
-    badges: [
-      { title: 'Website', url: 'https://glorytorome.xyz' },
-      { title: 'Github', url: 'https://github.com/galleonlabs/glory-to-rome-token' },
-    ]
-  },
-  {
     title: "Ultra Sound Apps",
     url: "https://ultrasoundapps.com/",
     imageSrc: "/usa.png",
@@ -124,6 +112,19 @@ const projects = [
     ]
   },
   {
+    title: "TradingView Indicators",
+    url: "https://www.tradingview.com/u/Tradespot/#published-scripts",
+    imageSrc: 'https://pbs.twimg.com/profile_images/1598328471729704963/D7slFVZN_400x400.jpg',
+    imageAlt: "TradingView Logo",
+    description: "Advanced charting tools for traders.",
+    detail: "Offering a comprehensive suite of free TradingView indicator scripts, this project enhances traders' visual analysis of market trends, volatility, and momentum, aiding in more informed trading decisions.",
+    badges: [
+      { title: 'ADW - Colour Trend', url: 'https://www.tradingview.com/script/AFZ7CFdm-ADW-Colour-Trend/' },
+      { title: 'ADW - Momentum', url: 'https://www.tradingview.com/script/p8CsPGUb-ADW-Momentum/' },
+      { title: 'ADW - Volatility Map', url: 'https://www.tradingview.com/script/tREldEYH-ADW-Volatility-Map/' },
+    ]
+  },
+  {
     title: "Music NFTs",
     url: "https://opensea.io/GalleonLabs",
     imageSrc: "/rf.png",
@@ -137,16 +138,15 @@ const projects = [
     ]
   },
   {
-    title: "TradingView Indicators",
-    url: "https://www.tradingview.com/u/Tradespot/#published-scripts",
-    imageSrc: 'https://pbs.twimg.com/profile_images/1598328471729704963/D7slFVZN_400x400.jpg',
-    imageAlt: "TradingView Logo",
-    description: "Advanced charting tools for traders.",
-    detail: "Offering a comprehensive suite of free TradingView indicator scripts, this project enhances traders' visual analysis of market trends, volatility, and momentum, aiding in more informed trading decisions.",
+    title: "Glory to Rome Token",
+    url: "https://glorytorome.xyz",
+    imageSrc: "/rome-icon-colour.png",
+    imageAlt: "Glory to Rome Logo",
+    description: "A fun, valueless meme token.",
+    detail: "A token dedicated to celebrating the grandeur of ancient Rome. Designed as a playful endeavor, this meme token aims to unite enthusiasts and admirers of Rome's historical legacy.",
     badges: [
-      { title: 'ADW - Colour Trend', url: 'https://www.tradingview.com/script/AFZ7CFdm-ADW-Colour-Trend/' },
-      { title: 'ADW - Momentum', url: 'https://www.tradingview.com/script/p8CsPGUb-ADW-Momentum/' },
-      { title: 'ADW - Volatility Map', url: 'https://www.tradingview.com/script/tREldEYH-ADW-Volatility-Map/' },
+      { title: 'Website', url: 'https://glorytorome.xyz' },
+      { title: 'Github', url: 'https://github.com/galleonlabs/glory-to-rome-token' },
     ]
   },
 ];
