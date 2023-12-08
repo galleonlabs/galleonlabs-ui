@@ -58,6 +58,18 @@ const tracks = [
 
 const projects = [
   {
+    title: "Tortuga Onchain",
+    url: "https://tortugaonchain.com",
+    imageSrc: "/tortuga.jpg",
+    imageAlt: "Tortuga onchain logo",
+    description: "Actionable crypto-native content for speculators.",
+    detail: "A new project under the flag of Galleon being built to include newsletter and other forms of media content that can be actioned.",
+    badges: [
+      { title: 'Website', url: 'https://tortugaonchain.com' },
+      { title: 'Twitter', url: 'https://twitter.com/TortugaOnchain' },
+    ]
+  },
+  {
     title: "Galleon DAO",
     url: "https://github.com/GalleonDAO",
     imageSrc: "./galleon-logo.png",
@@ -135,18 +147,6 @@ const projects = [
     badges: [
       { title: 'Opensea', url: 'https://opensea.io/GalleonLabs' },
       { title: 'Cursed Pirates OST', url: 'https://opensea.io/collection/cursed-pirates-ost' },
-    ]
-  },
-  {
-    title: "Glory to Rome Token",
-    url: "https://glorytorome.xyz",
-    imageSrc: "/rome-icon-colour.png",
-    imageAlt: "Glory to Rome Logo",
-    description: "A fun, valueless meme token.",
-    detail: "A token dedicated to celebrating the grandeur of ancient Rome. Designed as a playful endeavor, this meme token aims to unite enthusiasts and admirers of Rome's historical legacy.",
-    badges: [
-      { title: 'Website', url: 'https://glorytorome.xyz' },
-      { title: 'Github', url: 'https://github.com/galleonlabs/glory-to-rome-token' },
     ]
   },
 ];
