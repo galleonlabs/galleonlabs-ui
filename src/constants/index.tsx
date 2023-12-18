@@ -86,19 +86,6 @@ const projects = [
     ]
   },
   {
-    title: "Wojak Jones Farm",
-    url: "https://wojakjonesfarm.com",
-    imageSrc: "/farmer.png",
-    imagePadding: 'p-1',
-    imageAlt: "Wojak Jones Farm Logo",
-    description: "Community for crypto enthusiasts focused on yield farming.",
-    detail: "Wojak Jones Farm offers a serene and productive environment for high-yield cryptocurrency farming. It's a community-centric platform where members can engage in seasonal crypto farming activities throughout the year.",
-    badges: [
-      { title: 'Website', url: 'https://wojakjonesfarm.com/' },
-      { title: 'Github', url: 'https://github.com/galleonlabs/wojak-jones-farm' },
-    ]
-  },
-  {
     title: "Ultra Sound Apps",
     url: "https://ultrasoundapps.com/",
     imageSrc: "/usa.png",
