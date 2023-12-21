@@ -63,7 +63,7 @@ const projects = [
     imageSrc: "/tortuga.png",
     imageAlt: "Tortuga onchain logo",
     description: "Actionable crypto-native content for speculators.",
-    detail: "A new project under the flag of Galleon being built with the aim of providing zero bloat content to help investors and traders navigate the crypto markets and use on-chain protocols.",
+    detail: "Actionable crypto-native content for speculators. Drop anchor and take advantage of on-chain opportunities with us. Newsletter series available on Substack called 'The Trade Winds' and 'Portfolios'.",
     badges: [
       { title: 'Substack', url: 'https://tortugaonchain.substack.com/' },
       { title: 'Website', url: 'https://tortugaonchain.com' },
@@ -76,7 +76,7 @@ const projects = [
     imageSrc: "./galleon-logo.png",
     imageAlt: "Galleon DAO Logo",
     description: "Decentralized asset management and innovation hub.",
-    detail: "Functioned as the pioneering core development team for the venture-backed decentralized organization, Galleon. Aimed to be the premier provider of on-chain structured products. The DAO was operational for 1.5 years, leading several pioneering product launches on Ethereum, before it was discontinued due to funding constraints.",
+    detail: "Functioned as the core development team for the venture-backed decentralized organization, Galleon DAO. Aimed to be the premier provider of on-chain structured products. The DAO was operational for 1.5 years, leading several product launches on Ethereum, before it was discontinued due to funding constraints.",
     badges: [
       { title: 'Github', url: 'https://github.com/GalleonDAO' },
       { title: 'Twitter', url: 'https://twitter.com/galleonlabs' },
@@ -85,6 +85,10 @@ const projects = [
       { title: 'Archive', url: '/dao' },
     ]
   },
+];
+
+const apps = [
+
   {
     title: "Ultra Sound Apps",
     url: "https://ultrasoundapps.com/",
@@ -92,11 +96,6 @@ const projects = [
     imagePadding: 'p-1.5',
     imageAlt: "Ultra Sound Apps Logo",
     description: "Your gateway to crypto trading and analytics.",
-    detail: "Ultra Sound Apps provides a streamlined, easy-to-use homepage for navigating various applications in crypto trading, investing, portfolio management, and analytics, enabling one-click access to essential tools.",
-    badges: [
-      { title: 'Website', url: 'https://ultrasoundapps.com/' },
-      { title: 'Github', url: 'https://github.com/galleonlabs/ultrasoundapps' },
-    ]
   },
   {
     title: "Saylor Memes",
@@ -104,41 +103,34 @@ const projects = [
     imageSrc: 'https://saylormemes.com/saylor.jpg',
     imageAlt: "Saylor Memes Logo",
     description: "Curated collection of high-quality memes.",
-    detail: "Saylor Memes is a carefully curated online directory showcasing top-notch, organically sourced memes dedicated to the crypto culture. The platform encourages community contributions and curates content through social media interactions.",
-    badges: [
-      { title: 'Website', url: 'https://saylormemes.com/' },
-      { title: 'Twitter', url: 'https://twitter.com/andrew_eth' },
-      { title: 'Github', url: 'https://github.com/galleonlabs/saylormemes' },
-    ]
   },
-  {
-    title: "TradingView Indicators",
-    url: "https://www.tradingview.com/u/Tradespot/#published-scripts",
-    imageSrc: 'https://pbs.twimg.com/profile_images/1598328471729704963/D7slFVZN_400x400.jpg',
-    imageAlt: "TradingView Logo",
-    description: "Advanced charting tools for traders.",
-    detail: "Offering a comprehensive suite of free TradingView indicator scripts, this project enhances traders' visual analysis of market trends, volatility, and momentum, aiding in more informed trading decisions.",
-    badges: [
-      { title: 'ADW - Colour Trend', url: 'https://www.tradingview.com/script/AFZ7CFdm-ADW-Colour-Trend/' },
-      { title: 'ADW - Momentum', url: 'https://www.tradingview.com/script/p8CsPGUb-ADW-Momentum/' },
-      { title: 'ADW - Volatility Map', url: 'https://www.tradingview.com/script/tREldEYH-ADW-Volatility-Map/' },
-    ]
-  },
-  {
-    title: "Music NFTs",
-    url: "https://opensea.io/GalleonLabs",
-    imageSrc: "/rf.png",
-    imagePadding: 'p-1',
-    imageAlt: "Music NFTs Logo",
-    description: "Evocative soundtracks as NFTs.",
-    detail: "A creative studio in the Web3 space specializing in producing ambient and thematic music for games, films, and documentaries. These unique soundtracks are immortalized as collectible NFTs, capturing the essence of various art forms.",
-    badges: [
-      { title: 'Opensea', url: 'https://opensea.io/GalleonLabs' },
-      { title: 'Cursed Pirates OST', url: 'https://opensea.io/collection/cursed-pirates-ost' },
-    ]
-  },
+  // {
+  //   title: "TradingView Indicators",
+  //   url: "https://www.tradingview.com/u/Tradespot/#published-scripts",
+  //   imageSrc: 'https://pbs.twimg.com/profile_images/1598328471729704963/D7slFVZN_400x400.jpg',
+  //   imageAlt: "TradingView Logo",
+  //   description: "Advanced charting tools for traders.",
+  //   detail: "Offering a comprehensive suite of free TradingView indicator scripts, this project enhances traders' visual analysis of market trends, volatility, and momentum, aiding in more informed trading decisions.",
+  //   badges: [
+  //     { title: 'ADW - Colour Trend', url: 'https://www.tradingview.com/script/AFZ7CFdm-ADW-Colour-Trend/' },
+  //     { title: 'ADW - Momentum', url: 'https://www.tradingview.com/script/p8CsPGUb-ADW-Momentum/' },
+  //     { title: 'ADW - Volatility Map', url: 'https://www.tradingview.com/script/tREldEYH-ADW-Volatility-Map/' },
+  //   ]
+  // },
+  // {
+  //   title: "Music NFTs",
+  //   url: "https://opensea.io/GalleonLabs",
+  //   imageSrc: "/rf.png",
+  //   imagePadding: 'p-1',
+  //   imageAlt: "Music NFTs Logo",
+  //   description: "Evocative soundtracks as NFTs.",
+  //   detail: "A creative studio in the Web3 space specializing in producing ambient and thematic music for games, films, and documentaries. These unique soundtracks are immortalized as collectible NFTs, capturing the essence of various art forms.",
+  //   badges: [
+  //     { title: 'Opensea', url: 'https://opensea.io/GalleonLabs' },
+  //     { title: 'Cursed Pirates OST', url: 'https://opensea.io/collection/cursed-pirates-ost' },
+  //   ]
+  // },
 ];
-
 
 const team = [
   {
@@ -238,4 +230,4 @@ const dao = [
   },
 ];
 
-export { tracks, projects, team, dao }
+export { tracks, projects, team, dao, apps }

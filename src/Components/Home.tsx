@@ -1,4 +1,4 @@
-import { projects, team } from "../constants";
+import { apps, projects, team } from "../constants";
 import LinkBadge from "./LinkBadge";
 
 export interface Badge {
@@ -14,6 +14,15 @@ export interface ProjectProps {
   description: string;
   detail: string;
   badges: Badge[];
+  imagePadding?: string;
+}
+
+export interface AppProps {
+  title: string;
+  url: string;
+  imageSrc: string;
+  imageAlt: string;
+  description: string;
   imagePadding?: string;
 }
 
@@ -46,6 +55,24 @@ export default function Home() {
         {project.badges.map((badge: Badge) => (
           <LinkBadge key={badge.title} title={badge.title} url={badge.url} />
         ))}
+      </div>
+    );
+  }
+
+  function App({ app }: { app: AppProps }) {
+    return (
+      <div className="pb-6 mb-6 border-b border-theme-navy/20">
+        <span className="inline-flex items-center justify-center">
+          <a className="flex" href={app.url} target="_blank" rel="noopener noreferrer">
+            <div className="mx-auto w-auto justify-center text-center ">
+              <img className={'bg-white mx-auto translate-y-0.5 inline-flex h-16 w-16 justify-center rounded-md border border-theme-navy shadow-[3px_3px_0px_#040728] hover:grayscale sm:h-16 ' + app.imagePadding} src={app.imageSrc} alt={app.imageAlt} />
+            </div>
+            <div className="group">
+              <p className="mt-1 text-md text-theme-navy pl-6 group group-hover:text-theme-pan-sky font-semibold">{app.title}</p>
+              <p className="mt-1 text-md text-theme-navy pl-6 group group-hover:text-theme-pan-sky">{app.description}</p>
+            </div>
+          </a>
+        </span>
       </div>
     );
   }
@@ -101,6 +128,11 @@ export default function Home() {
               <h1 className="text-left text-lg font-bold text-theme-navy pb-4">Projects</h1>
               {projects.map((project: any) => (
                 <Project key={project.title} project={project} />
+              ))}
+
+              <h1 className="text-left text-lg font-bold text-theme-navy pb-4">Apps</h1>
+              {apps.map((project: any) => (
+                <App key={project.title} app={project} />
               ))}
 
               <h1 className="text-left text-lg font-bold text-theme-navy pb-4">Team</h1>
