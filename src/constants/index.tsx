@@ -104,6 +104,13 @@ const apps = [
     imageAlt: "Saylor Memes Logo",
     description: "Curated collection of high-quality memes.",
   },
+  {
+    title: "Eigenchad",
+    url: "https://eigenchad.com/",
+    imageSrc: 'https://pbs.twimg.com/profile_images/1715776754319491073/lWtwXpRt_400x400.jpg',
+    imageAlt: "Eigenchad Logo",
+    description: "EigenLayer maximalist & _Restaked contributor.",
+  },
   // {
   //   title: "TradingView Indicators",
   //   url: "https://www.tradingview.com/u/Tradespot/#published-scripts",
