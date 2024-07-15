@@ -104,13 +104,13 @@ const apps = [
     imageAlt: "Saylor Memes Logo",
     description: "Curated collection of high-quality memes.",
   },
-  {
-    title: "Eigenchad",
-    url: "https://eigenchad.com/",
-    imageSrc: 'https://pbs.twimg.com/profile_images/1715776754319491073/lWtwXpRt_400x400.jpg',
-    imageAlt: "Eigenchad Logo",
-    description: "EigenLayer maximalist & _Restaked contributor.",
-  },
+  // {
+  //   title: "Eigenchad",
+  //   url: "https://eigenchad.com/",
+  //   imageSrc: 'https://pbs.twimg.com/profile_images/1715776754319491073/lWtwXpRt_400x400.jpg',
+  //   imageAlt: "Eigenchad Logo",
+  //   description: "EigenLayer maximalist & _Restaked contributor.",
+  // },
   // {
   //   title: "TradingView Indicators",
   //   url: "https://www.tradingview.com/u/Tradespot/#published-scripts",
@@ -141,12 +141,12 @@ const apps = [
 
 const team = [
   {
-    name: "Andrew // Davy Jones",
-    url: "https://twitter.com/andrew_eth",
+    name: "Davy Jones",
+    url: "https://twitter.com/davyjones0x",
     imageSrc: "./davyjones.png",
     imagePadding: 'p-1',
     imageAlt: "Profile picture of Andrew",
-    handle: "@andrew_eth"
+    handle: "@davyjones0x"
   },
 ];
 
@@ -220,7 +220,7 @@ const dao = [
     badges: [
       { title: 'Galleon Labs', url: 'https://twitter.com/galleonlabs' },
       { title: 'Cursed Pirates', url: 'https://twitter.com/cursedpirates' },
-      { title: 'Founder', url: 'https://twitter.com/andrew_eth' },
+      { title: 'Founder', url: 'https://twitter.com/davyjones0x' },
     ]
   },
   {
