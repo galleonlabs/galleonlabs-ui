@@ -78,11 +78,7 @@ const projects = [
     description: "Decentralized asset management and innovation hub.",
     detail: "Functioned as the core development team for the venture-backed decentralized organization, Galleon DAO. Aimed to be the premier provider of on-chain structured products. The DAO was operational for 1.5 years, leading several product launches on Ethereum, before it was discontinued due to funding constraints.",
     badges: [
-      { title: 'Github', url: 'https://github.com/GalleonDAO' },
-      { title: 'Twitter', url: 'https://twitter.com/galleonlabs' },
-      { title: 'Blog', url: 'https://medium.com/galleondao' },
-      { title: 'Cursed Pirates', url: 'https://twitter.com/cursedpirates' },
-      { title: 'Archive', url: '/dao' },
+      { title: 'DAO Archive →', url: '/dao' },
     ]
   },
 ];
