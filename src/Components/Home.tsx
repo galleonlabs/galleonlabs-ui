@@ -1,6 +1,5 @@
 import React from "react";
 import { projects, apps, team } from "../constants";
-import LinkBadge from "./LinkBadge";
 
 // Interfaces
 export interface Badge {
@@ -59,10 +58,6 @@ const Project: React.FC<{ project: ProjectProps }> = ({ project }) => (
         </div>
       </a>
     </span>
-    <p className="mt-6 text-md text-theme-navy group group-hover:text-theme-pan-sky pb-4">{project.detail}</p>
-    {project.badges.map((badge: Badge) => (
-      <LinkBadge key={badge.title} title={badge.title} url={badge.url} />
-    ))}
   </div>
 );
 

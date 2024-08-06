@@ -59,7 +59,7 @@ const tracks = [
 const projects = [
   {
     title: "East India Onchain Company",
-    url: "https://github.com/GalleonDAO",
+    url: "https://eastindiaonchaincompany.com/",
     imageSrc: "./eioc.png",
     imageAlt: "EIOC Logo",
     imagePadding: "p-1",
@@ -83,10 +83,10 @@ const projects = [
   },
   {
     title: "Galleon DAO",
-    url: "https://github.com/GalleonDAO",
+    url: "/dao",
     imageSrc: "./galleon-logo.png",
     imageAlt: "Galleon DAO Logo",
-    description: "Decentralized asset management and innovation hub.",
+    description: "Venture funded decentralized asset management and innovation hub.",
     detail:
       "Functioned as the core development team for the venture-backed decentralized organization, Galleon DAO. Aimed to be the premier provider of on-chain structured products. The DAO was operational for 1.5 years, leading several product launches on Ethereum, before it was discontinued due to funding constraints.",
     badges: [{ title: "DAO Archive →", url: "/dao" }],
