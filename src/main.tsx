@@ -1,46 +1,37 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
+// main.tsx
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import React, { lazy, Suspense } from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Layout from "./layout/Layout.tsx";
+import Error from "./layout/Error.tsx";
+import ErrorBoundary from "./Components/ErrorBoundary";
 
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getFirestore } from "firebase/firestore";
-import Layout from './layout/Layout.tsx';
-import Error from './layout/Error.tsx';
-import Home from './Components/Home.tsx';
-import DAO from './Components/DAO.tsx';
-
-
-const firebaseConfig = {
-  apiKey: import.meta.env.VITE_API_KEY,
-  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_APP_ID,
-  measurementId: import.meta.env.MEASUREMENT_ID
-};
-
-const app = initializeApp(firebaseConfig);
+const Home = lazy(() => import("./Components/Home.tsx"));
+const DAO = lazy(() => import("./Components/DAO.tsx"));
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout></Layout>,
+    element: <Layout />,
     errorElement: <Error />,
     children: [
       {
         path: "",
-        element: <Home />,
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <Home />
+          </Suspense>
+        ),
       },
       {
         path: "dao",
-        element: <DAO />,
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <DAO />
+          </Suspense>
+        ),
       },
     ],
   },
@@ -48,9 +39,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ErrorBoundary>
+      <RouterProvider router={router} />
+    </ErrorBoundary>
   </React.StrictMode>,
 )
-
-export const db = getFirestore(app);
-export const analytics = getAnalytics(app);
