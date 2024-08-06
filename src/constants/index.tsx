@@ -58,17 +58,28 @@ const tracks = [
 
 const projects = [
   {
+    title: "East India Onchain Company",
+    url: "https://github.com/GalleonDAO",
+    imageSrc: "./eioc.png",
+    imageAlt: "EIOC Logo",
+    imagePadding: "p-1",
+    description: "Onchain yield & farming operation.",
+    detail: "Crypto application portraying performance and metrics of a onchain yield portfolio over time.",
+    badges: [{ title: "Website", url: "https://eastindiaonchaincompany.com/" }],
+  },
+  {
     title: "Tortuga Onchain",
     url: "https://tortugaonchain.com",
     imageSrc: "/tortuga.png",
     imageAlt: "Tortuga onchain logo",
     description: "Actionable crypto-native content for speculators.",
-    detail: "Actionable crypto-native content for speculators. Drop anchor and take advantage of on-chain opportunities with us. Newsletter series available on Substack called 'The Trade Winds' and 'Portfolios'.",
+    detail:
+      "Actionable crypto-native content for speculators. Drop anchor and take advantage of on-chain opportunities with us. Newsletter series available on Substack called 'The Trade Winds' and 'Portfolios'.",
     badges: [
-      { title: 'Substack', url: 'https://tortugaonchain.substack.com/' },
-      { title: 'Website', url: 'https://tortugaonchain.com' },
-      { title: 'Twitter', url: 'https://twitter.com/TortugaOnchain' },
-    ]
+      { title: "Substack", url: "https://tortugaonchain.substack.com/" },
+      { title: "Website", url: "https://tortugaonchain.com" },
+      { title: "Twitter", url: "https://twitter.com/TortugaOnchain" },
+    ],
   },
   {
     title: "Galleon DAO",
@@ -76,27 +87,25 @@ const projects = [
     imageSrc: "./galleon-logo.png",
     imageAlt: "Galleon DAO Logo",
     description: "Decentralized asset management and innovation hub.",
-    detail: "Functioned as the core development team for the venture-backed decentralized organization, Galleon DAO. Aimed to be the premier provider of on-chain structured products. The DAO was operational for 1.5 years, leading several product launches on Ethereum, before it was discontinued due to funding constraints.",
-    badges: [
-      { title: 'DAO Archive →', url: '/dao' },
-    ]
+    detail:
+      "Functioned as the core development team for the venture-backed decentralized organization, Galleon DAO. Aimed to be the premier provider of on-chain structured products. The DAO was operational for 1.5 years, leading several product launches on Ethereum, before it was discontinued due to funding constraints.",
+    badges: [{ title: "DAO Archive →", url: "/dao" }],
   },
 ];
 
 const apps = [
-
   {
     title: "Ultra Sound Apps",
     url: "https://ultrasoundapps.com/",
     imageSrc: "/usa.png",
-    imagePadding: 'p-1.5',
+    imagePadding: "p-1.5",
     imageAlt: "Ultra Sound Apps Logo",
     description: "Your gateway to crypto trading and analytics.",
   },
   {
     title: "Saylor Memes",
     url: "https://saylormemes.com/",
-    imageSrc: 'https://saylormemes.com/saylor.jpg',
+    imageSrc: "https://saylormemes.com/saylor.jpg",
     imageAlt: "Saylor Memes Logo",
     description: "Curated collection of high-quality memes.",
   },
